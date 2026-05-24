@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Photo Editor</title>
+		<link rel="stylesheet" href="index.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Madhushree Rasal">
+	</head>
+	<body class="grid-container">
+		<nav>
+		<h1>Photo Editor</h1>
+		</nav>
+		<div class="space">
+			<h2>Filters</h2>
+			<!-- input but hidden-->
+			<input type="radio" name="filter-select" id="bright1" style="display:none;">
+			<input type="radio" name="filter-select" id="none" checked style="display:none;">
+			<input type="radio" name="filter-select" id="bright2"  style="display:none;">
+			<input type="radio" name="filter-select" id="bright3"  style="display:none;">
+			<input type="radio" name="filter-select" id="bright3"  style="display:none;">
+			<input type="radio" name="filter-select" id="blur1"  style="display:none;">
+			<input type="radio" name="filter-select" id="blur2"  style="display:none;">
+			<input type="radio" name="filter-select" id="blur3"  style="display:none;">
+			<input type="radio" name="filter-select" id="contrast1"  style="display:none;">
+			<input type="radio" name="filter-select" id="contrast2"  style="display:none;">
+			<input type="radio" name="filter-select" id="contrast3"  style="display:none;">
+			<input type="radio" name="filter-select" id="grey1"  style="display:none;">
+			<input type="radio" name="filter-select" id="grey2"  style="display:none;">
+			<input type="radio" name="filter-select" id="grey3"  style="display:none;">
+			<input type="radio" name="filter-select" id="grey4"  style="display:none;">
+			<input type="radio" name="filter-select" id="hue1"  style="display:none;">
+			<input type="radio" name="filter-select" id="hue2"  style="display:none;">
+			<input type="radio" name="filter-select" id="hue3"  style="display:none;">
+			<input type="radio" name="filter-select" id="invert1"  style="display:none;">
+			<input type="radio" name="filter-select" id="opacity1"  style="display:none;">
+			<input type="radio" name="filter-select" id="opacity2"  style="display:none;">
+			<input type="radio" name="filter-select" id="opacity3"  style="display:none;">
+			<input type="radio" name="filter-select" id="saturation1"  style="display:none;">
+			<input type="radio" name="filter-select" id="saturation2"  style="display:none;">
+			<input type="radio" name="filter-select" id="saturation3"  style="display:none;">
+			<input type="radio" name="filter-select" id="sepia1"  style="display:none;">
+			<input type="radio" name="filter-select" id="sepia2"  style="display:none;">
+			<input type="radio" name="filter-select" id="sepia3"  style="display:none;">
+			<input type="radio" name="filter-select" id="shadow1"  style="display:none;">
+			<input type="radio" name="filter-select" id="shadow2"  style="display:none;">
+			<input type="radio" name="filter-select" id="shadow3"  style="display:none;">
+			<div class="filters">
+			<!-- Filters-->
+				<fieldset>
+					<legend>Brightness</legend>
+					<ul type="none">
+					<li><label for="none">None</label><br></li>
+					<li><label for="bright1">Low </label></li>
+					<li><label for="bright2">Medium </label></li>
+					<li><label for="bright3">High </label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Blur:</legend>
+					<ul type="none">
+						<li><label for="blur1">20%</label></li>
+						<li><label for="blur2">50%</label></li>
+						<li><label for="blur3">80%</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Contrast</legend>
+					<ul type="none">
+						<li><label for="contrast1">Low</label></li>
+						<li><label for="contrast2">Medium</label></li>
+						<li><label for="contrast3">Sharp</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Grayscale</legend>
+					<ul type="none">
+						<li><label for="grey1">20%</label></li>
+						<li><label for="grey2">50%</label></li>
+						<li><label for="grey3">80%</label></li>
+						<li><label for="grey4">100%</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Hue-Rotate</legend>
+					<ul type="none">
+						<li><label for="hue1">90'</label></li>
+						<li><label for="hue2">180'</label></li>
+						<li><label for="hue3">270'</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>invert colors</legend>
+					<ul type="none">
+						<li><label for="invert1">Invert</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Opacity</legend>
+					<ul type="none">
+						<li><label for="opacity1">20%</label></li>
+						<li><label for="opacity2">50%</label></li>
+						<li><label for="opacity3">80%</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Saturation</legend>
+					<ul type="none">
+						<li><label for="saturation1">20%</label></li>
+						<li><label for="saturation2">50%</label></li>
+						<li><label for="saturation3">80%</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Sepia (tone)</legend>
+					<ul type="none">
+						<li><label for="sepia1">Low</label></li>
+						<li><label for="sepia2">Medium</label></li>
+						<li><label for="sepia3">High</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Shadow</legend>
+					<ul type="none">
+						<li><label for="shadow1">Add Shadow</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Filters</legend>
+					<ul type="none">
+						<li><label for="shadow2">Auto</label></li>
+						<li><label for="shadow3">Dreamy</label></li>
+					</ul>
+				</fieldset>
+			</div>
+			<div class="container">
+			<!-- image to be edited-->
+			<span class="span">Try our editor for free on this sample image:</span><br>
+			<img class="img" id="img" src="https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=612x612&w=0&k=20&c=UHeb1pGOw6ozr6utsenXHhV19vW6oiPIxDqhKCS2Llk=" alt="image"><br>
+			<label for="file" class="file">Add and edit the image of your own choice</label><br><br>
+			<input type="file" id="file">
+			</div>
+			<input class="save" type="submit" value="Save">
+		</div>
+		<footer>
+			&copy All rights reserved 2025 | Privacy Policies
+		</footer>
+	</body>
+</html>
